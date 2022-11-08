@@ -7,3 +7,32 @@
     </div>
   </div>
 </div>
+
+<!--ng-content is used when you want to display html content written inside child attribute on parent content-->
+<ng-content select="[message]"></ng-content>
+<ng-content select="[luck]"></ng-content>
+
+
+<!--mostly used when you want to use more than two structural directives e.g. ngIf and ngFor or ngSwitch-->
+<ng-container *ngIf="countries; then content else noContent"></ng-container>
+
+<!--It is used for grouping content that is not rendered, but that can be used in other parts of your code-->
+  <ng-template  #content >
+    <p *ngFor="let country of countries">Country: {{country}}</p>
+  </ng-template>
+
+<ng-template #noContent>
+  <p>No Countries</p>
+</ng-template>
+
+<section *appMyDirective="5000; then display">
+  <section>
+    <h1>TESTING Custom Directives</h1>
+  </section>
+</section>
+
+<ng-template #display>
+  <section>
+    <h1>Hiding Custom Directives</h1>
+  </section>
+</ng-template>

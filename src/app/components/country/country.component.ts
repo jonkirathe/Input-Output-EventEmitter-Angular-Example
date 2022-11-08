@@ -17,6 +17,9 @@ export class CountryComponent implements OnInit {
   public showMessage = new EventEmitter<string>();
 
   @Input()
+  countries = ['Kenya', 'Tanzania', 'Uganda'];
+
+  @Input()
   public set country(country: string) {
     this._country = country;
   }

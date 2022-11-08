@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-   country: string = 'Kenya';
-   message!: string;
+  country: string = 'Kenya';
+  message!: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

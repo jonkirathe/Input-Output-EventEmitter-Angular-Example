@@ -1,9 +1,12 @@
+<!--parent container-->
 <div class="container">
   <div class="row  justify-content-center bg-info ">
     <div class="col-6 border-2 border-primary bg-light p-3 m-3">
       <h4 class="m-3 p-3 font-weight-bold">How to use @Input, @Output and EventEmitter in Angular</h4>
-      <app-country (showMessage)="getMessage($event)" [country]="country"></app-country>
-      <h6 class="m-4 font-italic text-danger shadow-sm">{{message}}</h6>
+      <app-country (showMessage)="getMessage($event)" [country]="country">
+        <h6 message class="m-4 font-italic text-danger shadow-sm">{{message}}</h6>
+        <h6 luck class="m-4 font-italic text-danger shadow-sm">Good Luck!</h6>
+      </app-country>
     </div>
   </div>
 </div>

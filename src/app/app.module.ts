@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {CountryComponent} from "./components/country/country.component";
 import {MainComponent} from "./components/main/main.component";
+import { MyDirectiveDirective } from './directives/my-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     CountryComponent,
+    MyDirectiveDirective,
   ],
   imports: [
     BrowserModule,
